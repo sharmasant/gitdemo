@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>wellcome page</title>
+			<meta charset='utf-8'>
+
+<style>
+.swiper {
+  width: 100%;
+  height: 390px;
+}
+body{
+margin:0px;}
+</style>
+		</head>
+			<body>
+			
+				<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src='img/desing.jpg' alt='desing' width='100%' height='350px'></div>
+    <div class="swiper-slide"><img src='img/marshmellow.jpeg' alt='marshmellow' width='100%' height='350'></div>
+    <div class="swiper-slide"><img src='img/nature.jpg' alt='nature' width='100%' height='350'></div>
+    <div class="swiper-slide"><img src='img/peacock-feather.jpg' alt='peacock-feather' width='100%' height='350'></div>
+	 <div class="swiper-slide"><img src='img/tree.jpg' alt='tree' width='100%' height='350'></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+<link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+
+</script>
+		
+          </body>					
+		  </html>
